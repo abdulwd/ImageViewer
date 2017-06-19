@@ -19,6 +19,10 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".LoginActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+        </activity>
+        <activity
             android:name=".FullScreenImage"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:parentActivityName=".MainActivity"
