@@ -1,9 +1,8 @@
 package com.abdulwd.imageviewer;
 
-import android.support.v7.app.AppCompatActivity;
-
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.view.KeyEvent;
 import android.view.View;
@@ -17,7 +16,7 @@ import android.widget.TextView;
 /**
  * A login screen that offers login via email/password.
  */
-public class LoginActivity extends AppCompatActivity{
+public class LoginActivity extends AppCompatActivity {
 
     /**
      * A dummy authentication store containing known user names and passwords.
@@ -116,12 +115,12 @@ public class LoginActivity extends AppCompatActivity{
         }
     }
 
-    private boolean isEmailValid(String email) {
+    boolean isEmailValid(String email) {
         //TODO: Replace this with your own logic
         return email.contains("@");
     }
 
-    private boolean isPasswordValid(String password) {
+    boolean isPasswordValid(String password) {
         //TODO: Replace this with your own logic
         return password.length() > 4;
     }
